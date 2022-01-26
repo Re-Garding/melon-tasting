@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html margin>
+<head>
+        <link rel="stylesheet" href="/static/base.css">
+          <title>{% block title %} Melon Tasting {% endblock %}
+        </title>
+        <ul>
+          {% for message in get_flashed_messages() %}
+            <li class="flash">{{ message }}</li>
+          {% endfor %}
+        </ul>
+</head> 
+<body class="body">
+  {% block body %} {% endblock %}
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %} Welcome! {% endblock %}
+{% block body %} 
+<form action="/booked">
+    <button type="submit"> Login Here </button>
+    <button type="submit"> See Current Reservations </button>
+</form>
+<form action="/booking">
+    <button type="submit"> Search For Reservation Time </button>
+</form> 
+
+
+{% endblock %}
